@@ -1,19 +1,47 @@
-body{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  height:100vh;
-}
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:600&display=swap");
 
-.quadrado{
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#title {
+  margin-bottom: 100px;
+  font-size: 21px;
+  font-weight: 600;
+}
+.box2 {
+  position: absolute;
+  top: 300px;
   height: 100px;
   width: 100px;
-  background: red;
-  animation: rodar 1s infinite linear;
-  border-radius:10%;
+  background: rgba(0, 0, 255, 0.7);
+  animation: rodar2 1s infinite linear;
+  border-radius: 10%;
 }
-@keyframes rodar{
-  to{
-    transform:rotate(180deg);
+.box {
+  height: 100px;
+  width: 100px;
+  background: rgba(0, 157, 0, 0.8);
+  animation: rodar 1s infinite linear;
+  border-radius: 10% 90%;
+}
+@keyframes rodar {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rodar2 {
+  to {
+    transform: rotate(360deg);
   }
 }
