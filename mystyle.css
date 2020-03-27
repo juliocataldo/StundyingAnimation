@@ -1,0 +1,19 @@
+body{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+}
+
+.quadrado{
+  height: 100px;
+  width: 100px;
+  background: red;
+  animation: rodar 1s infinite linear;
+  border-radius:10%;
+}
+@keyframes rodar{
+  to{
+    transform:rotate(180deg);
+  }
+}
